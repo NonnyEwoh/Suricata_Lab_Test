@@ -1,0 +1,7 @@
+Recommended screenshot evidence:
+01-interface.png       - ip -br addr
+02-suricata-test.png   - suricata -T
+03-netcat-listener.png - nc -lvnp 4444
+04-traffic.png         - client sends marker
+05-fast-log.png        - grep alert
+06-eve-jq.png          - jq parsed alert

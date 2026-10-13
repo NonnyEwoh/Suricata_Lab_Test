@@ -1,0 +1,29 @@
+# Example settings for the Suricata IDS lab.
+# This is a reference snippet, not a replacement for the distribution's
+# complete /etc/suricata/suricata.yaml.
+#
+# Confirm these outputs are enabled in your installed configuration.
+
+outputs:
+  - fast:
+      enabled: yes
+      filename: fast.log
+      append: yes
+
+  - eve-log:
+      enabled: yes
+      filetype: regular
+      filename: eve.json
+      types:
+        - alert
+
+# If you want Suricata to load the custom rule through the config instead of
+# the command-line -S option, use a rule path such as:
+#
+# default-rule-path: /var/lib/suricata/rules
+# rule-files:
+#   - suricata.rules
+#   - /etc/suricata/rules/local.rules
+#
+# Keep your distribution's complete YAML file intact and make only the
+# required changes.

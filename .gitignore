@@ -1,0 +1,21 @@
+# Suricata runtime logs
+*.log
+logs/
+*.pcap
+*.pcapng
+
+# Local/editor files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Python/cache artifacts
+__pycache__/
+*.pyc
+
+# Local secrets/config overrides
+.env
+*.secret
+
+# Keep sanitized sample output under sample-output/
